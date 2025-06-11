@@ -1,6 +1,6 @@
 .env
 __pyache__/
-DigiCertGlobalRootCA.crt
+*.crt.pem
 *.PublishSettings
 
 
