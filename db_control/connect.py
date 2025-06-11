@@ -31,11 +31,11 @@ DATABASE_URL = f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB
 # エンジンの作成(SSL設定追加)
 engine = create_engine(
     DATABASE_URL,
-    connect_args={
-        "ssl":{
-            "ssl_ca": ssl_cert
-        }
-    },
+    # connect_args={
+    #     "ssl":{
+    #         "ssl_ca": ssl_cert
+    #     }
+    # },
     echo=False,     #SQLログを無効化（本番環境用）
     pool_pre_ping=True,
     pool_recycle=3600,

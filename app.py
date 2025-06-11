@@ -60,7 +60,7 @@ async def test_db_connection(db: Session = Depends(get_db)):
         result= []
 
         # 商品コードをいくつか試す
-        test_codes = ["4901681328413", "4901681316717", "4901681316861"]
+        test_codes = ["4901681328413", "490168531219", "490168531233"]
         for code in test_codes:
             product = get_product_by_code(db, code)
             if product:
