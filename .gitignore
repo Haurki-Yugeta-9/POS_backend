@@ -1,6 +1,26 @@
+
+# Python（FastAPI用）
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
 .env
-__pyache__/
+.env.*
 *.crt.pem
 *.PublishSettings
 *.yml
 
+
+
+# OS・エディタ関連
+.DS_Store
+*.log
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# その他
+coverage/
+dist/
+build/
